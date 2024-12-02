@@ -1,0 +1,76 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ebeb69, #ea2a66);
+    color: white;
+    overflow: hidden;
+}
+
+.stopwatch-container {
+    text-align: center;
+    background: rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 50px 30px;
+    box-shadow: 0 15px 30px rgb(4, 3, 3);
+    transition: transform 0.2s ease;
+}
+
+.stopwatch-container:hover {
+    transform: scale(1.05);
+}
+
+.time-display {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    outline: none;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.start {
+    background: #ed1a07;
+    color: white;
+}
+
+.start:hover {
+    background: #ff4c3b;
+}
+
+.reset {
+    background: #4caf50;
+    color: white;
+}
+
+.reset:hover {
+    background: #45a049;
+}
